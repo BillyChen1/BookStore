@@ -3,7 +3,7 @@
     <h1>订单总览</h1>
     <p></p>
     <h3 style="padding-left: 33px">商品详情:</h3>
-    <asp:GridView ID="OrderItemList" runat="server" AutoGenerateColumns="False" GridLines="Both" CellPadding="10" Width="500" BorderColor="#efeeef" BorderWidth="33">              
+    <asp:GridView ID="OrderItemList" runat="server" AutoGenerateColumns="False" CellPadding="10" Width="500px" BorderColor="#EFEEEF" BorderWidth="33px">              
         <Columns>
             <asp:BoundField DataField="ProductId" HeaderText="书本ID" />        
             <asp:BoundField DataField="Product.ProductName" HeaderText=" 书名" />        

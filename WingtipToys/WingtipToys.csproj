@@ -177,6 +177,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
+    <Content Include="Admin\Statistics.aspx" />
     <Content Include="Catalog\Images\algorithm.png" />
     <Content Include="Catalog\Images\DataStructure.png" />
     <Content Include="Catalog\Images\designPattern.png" />
@@ -401,6 +402,13 @@
     <Compile Include="Admin\AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Statistics.aspx.designer.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -472,6 +480,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logic\AddProducts.cs" />
+    <Compile Include="Logic\AdminOperation.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Logic\ShoppingCartActions.cs" />
     <Compile Include="Models\CarItem.cs" />

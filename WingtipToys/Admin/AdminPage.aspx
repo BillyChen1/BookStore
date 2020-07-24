@@ -2,6 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>管理员</h1>
     <hr />
+    <h3>
+        <a href="Statistics.aspx">查看统计</a>
+    </h3>
     <h3>新增</h3>
     <table>
         <tr>

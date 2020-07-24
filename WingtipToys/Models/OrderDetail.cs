@@ -16,5 +16,7 @@ namespace WingtipToys.Models
 
         public double? UnitPrice { get; set; }
 
+        public virtual Product Product { get; set; }
+
     }
 }

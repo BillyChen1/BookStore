@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WingtipToys.Logic;
 using WingtipToys.Models;
 
 namespace WingtipToys.Checkout
@@ -77,6 +78,10 @@ namespace WingtipToys.Checkout
                             myOrderDetail.ProductId = myOrderList[i].ProductId;
                             myOrderDetail.Quantity = myOrderList[i].Quantity;
                             myOrderDetail.UnitPrice = myOrderList[i].Product.UnitPrice;
+
+                            //更新已售数量
+                            AdminOperation change = new AdminOperation();
+                            change.ChangeSoldNumber(myOrderDetail.ProductId, myOrderDetail.Quantity);
 
                             // Add OrderDetail to DB.
                             _db.OrderDetails.Add(myOrderDetail);

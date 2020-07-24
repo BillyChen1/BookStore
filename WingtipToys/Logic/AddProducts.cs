@@ -16,6 +16,7 @@ namespace WingtipToys.Logic
             myProduct.UnitPrice = Convert.ToDouble(ProductPrice);
             myProduct.ImagePath = ProductImagePath;
             myProduct.CategoryID = Convert.ToInt32(ProductCategory);
+            myProduct.Sold = 0;
             
             
 
